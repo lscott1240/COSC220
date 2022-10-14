@@ -1,0 +1,10 @@
+----------Grocery Receipt----------
+
+
+Item Number           Item Name                Unit          Unit Price                 Tax            Subtotal
+------------           ---------               -----         -----------                ----            --------
+202           Coffee-Maxwell-42oz                   0               11.98                0.72               12.70
+806           Beef-LeanGround-93%                2.00                3.86                0.46                8.18
+
+
+Total         -----------     20.88         -----------
