@@ -1,0 +1,9 @@
+----------Grocery Reciept----------
+
+
+Item Number           Item Name                Unit          Unit Price                 Tax            Subtotal
+------------          ----------               -----         -----------                ----            --------
+37                      Kiwifruit                   3                0.39                0.00                1.17
+
+
+                                                                                     Total    :     1.17
