@@ -1,0 +1,28 @@
+*********************************************
+************** Lab 4 Summary ****************
+*********************************************
+** Grocery Receipt System with Linked List **
+*********************************************
+
+You are going to upgrade your grocery receipt system ( Reference Lab 2 ). Now, instead of writing each item's calculation to an output file,
+keep each item's information in a sorted linked list ( Sorted by item number ) until customer wants to check out.  You need to use the following
+node structure for saving in the linked list.
+
+Structure Node
+    - int itemNum
+    - char itemName[40]
+    - double unit
+    - double tax
+    - double subtotal
+    - Node * next
+    
+Note :
+    - The grocery system should now have two more options in the menu, print current receipt and delete current item.
+    
+    - Format:
+        - 1. Insert new item
+        - 2. Print current receipt
+        - 3. Delete item from order
+        - 4. Create a receipt and stop
+        
+    - For selection 3, prompt the user for the item number they wish to delete.
