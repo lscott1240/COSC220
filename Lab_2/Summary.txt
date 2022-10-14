@@ -1,0 +1,33 @@
+********************************
+******** Lab 2 Summary *********
+********************************
+**** Grocery Receipt System ****
+********************************
+
+We are going to build a grocery receipt system.
+There is a diverse selection of items to sell in our grocery store.  All item's information are in the file named "item.txt" which will be provided.
+Each item has an item number, an item name, taxability, a selling type, and a unit price.  The data formats "for item.txt" are as follows.
+
+34    Vegetable_2   n   p   1.99
+56    Coffe_a       t   s   5.99
+78    Fruit_3       n   n   0.33
+
+Item number, item name, taxability, selling type, and unit price.
+
+Objective : 
+  - Build a program that reads from the input file "item.txt" and prompts user to enter item id and quantity of the item they would like to order.
+      - Note : 
+          - Item type 'p' or 'n' should prompt the user to enter how many pounds or units ( quantity ) they would like respectively.
+          - Item type 's' should not prompt the user for quantity     
+          - Taxability used in this program is 6 % (This is not important and can be changed )
+          
+  - Write a menu function that provides the user with the following options :
+      - 1. Order an item
+      - 2. Quit the program
+  
+  - The output of this program should be written to a text file named "YourLastName_FirstName.txt"
+
+Notes : 
+  - Do not use a class
+  - Open input file only once for creating an output file
+  - Do not create local space to save all information from the input file in your program
