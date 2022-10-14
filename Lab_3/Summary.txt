@@ -1,0 +1,41 @@
+*********************************
+******** Lab 3 Summary **********
+*********************************
+*** Sorted Single Linked List ***
+*********************************
+
+We are going to implement a sorted single linked list by student's ID number.  You need to divide your program into three files :
+    - Link.h
+    - LinkFun.cpp
+    - LinkedList.cpp
+    
+Node structure :
+    - char lastName[20]
+    - char firstName[20]
+    - int idNumber
+    - Node * next
+
+Function prototypes :
+   Node * createNode() : 
+        - Create a new node with "new" operator. Get student data from keyboard and assign to members of the Node.
+        
+   Node * insertNode (Node *, Node *) :
+        - Insert a new node to the linked list sorted by student's ID number. If a new node ID is already in the list, it must be recognized
+          and inform to the user "This student is already in the list".
+        
+   Node * searchNode (Node *) :
+        - Search a node by student ID number, if there is no match, return NULL pointer.
+ 
+   Node * deleteNode (Node *, int)
+         - Delete a node from the list.  If there is no matched id for delete, write a message and do nothing.
+   
+   void printList (Node *)
+         - Display all the students' information in the list ( For empty list, display "empty list" )
+         
+In LinkedList.cpp create a menu function as well as a validation function that checks user input and displays the following :
+    - 1. Insert a node
+    - 2. Delete a node
+    - 3. Print list
+    - 4. Search a node - search a node and print information for a student
+    - 5. Quit the program
+   
