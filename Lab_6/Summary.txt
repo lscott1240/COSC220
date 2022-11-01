@@ -1,0 +1,65 @@
+*******************************************************
+******************* Lab 6 Summary *********************
+*******************************************************
+** Stack Implementation by Linked List with Template **
+*******************************************************
+
+We are going to implement a stack by linked list with template. Since you have a stack with template, your stack must be able to be used for saving any data types. There are five functions to manage your stack.
+
+push - Push a new element in the top of the stack
+pop - Pop out an element from the top of the stack
+isEmpty - return true if a stack is empty, false if not
+isFull - return true if a stack is full, return false if there is any space in the stack
+topStack - return a data from the top of the stack without pop out
+
+Stack.h :
+  template <class DataType>
+  struct StackNode :
+    - DataType data;
+    - StackNode<DataType> * next;
+    
+  template <class DataType>
+  class Stack :
+    private :
+    - StackNode<DataType> * top
+    - int maxSize
+    - int numNodes
+    
+    public : 
+    - Stack (int = 10)
+    - ~Stack()
+    - bool isEmpty() const
+    - bool isFull() const
+    - void push(const DataType)
+    - void pop()
+    - DataType topStack() const
+    
+Stack.cpp :
+  A .cpp file for member functions of class Stack
+  
+Student.h :
+  struct Students :
+    - char lastName[20]
+    - char firstName[20]
+    - int idNumber
+    - Students()
+    - void printStudent()
+    
+Student.cpp :
+  A .cpp file for member functions of class Student
+  
+Lab5.cpp :
+
+*** Your program should prompt the user for two different types of stacks: Integer or Student ***
+
+  Menu :
+  - 1. push()
+  - 2. pop()
+  - 3. topStack()
+  - 4. Quit
+  
+  ValidateInput : 
+  - Validate user input for menu function
+  
+Instantiation.cpp :
+  Create an instantiation file that will allow your code to compile
