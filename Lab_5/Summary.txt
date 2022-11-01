@@ -1,1 +1,46 @@
-test
+*********************************************
+************** Lab 5 Summary ****************
+*********************************************
+****** Sorted Linked List with Classes ******
+*********************************************
+
+You need to define two classes to implement linked list: the class "Node" and the class "LinkedList". You need to create two header files (Node.h, LinkedList.h), three program files (Node.cpp, LinkedList.cpp and Lab5.cpp) and a makefile file for using make utility.
+
+Node.h :
+  Private :
+  - char lastName[20]
+  - char firstName[20]
+  - int idNumber
+  - Node * next
+  
+  Public :
+  - Node (constructor) - Member function to allocate a Node object with initialization from keyboard
+  - printNode - Member function for printing a node information
+  
+  
+LinkedList.h :
+  Private : 
+  - list - Pointer to the first node of the linked list
+  - createNode - A utility member function which creates a Node
+  - searchLocation - A utility ember function which returns a location of a node for delete, insert a node and search in the list
+  
+  Public : 
+  - LinkedList (constructor) - Allocate a LinkedList object with list set to NULL
+  - ~LinkedList (destructor) - Delete all existing nodes in the List
+  - insertNode - Insert a new node into the list.  Create a Node and insert a node into the right location
+  - deleteNode - Get a student ID to delete.  Then, delete a specific node based on a student ID number
+  - printList - Display each of student's information in the current list
+  - searchNode - Check whether there is a student with an ID in the list
+  
+Node.cpp & LinkedList.cpp :
+  - Program files for corresponding member functions of their respective classes
+  
+Lab5.cpp :
+  Menu :
+  - 1. Insert a node
+  - 2. Delete a node
+  - 3. Print List
+  - 4. Search a node
+  - 5. Quit the program
+  
+  - Input validation function to validate user input
